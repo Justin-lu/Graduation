@@ -1,7 +1,5 @@
 # -*- encoding : utf-8 -*-
 Graduation::Application.routes.draw do
-  get "welcome/index"
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -15,6 +13,7 @@ Graduation::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  resources :welcome
 
   # Sample resource route with options:
   # Sample resource route with sub-resources:
@@ -40,7 +39,7 @@ Graduation::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
 

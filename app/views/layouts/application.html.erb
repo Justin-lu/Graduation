@@ -4,7 +4,7 @@
   <title>Graduation</title>
   <%= javascript_include_tag "application" %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag params[:controller] if Graduation::Application.assets.find_asset("#{params[:controller]}.js") %>
+  <!-- include javascript with controller + action -->
   <%= javascript_include_tag "#{params[:controller]}/#{params[:action]}"  if Graduation::Application.assets.find_asset("#{params[:controller]}/#{params[:action]}.js") %>
   <%= csrf_meta_tags %>
 </head>
