@@ -1,4 +1,7 @@
+# -*- encoding : utf-8 -*-
 Graduation::Application.routes.draw do
+  get "welcome/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -14,17 +17,6 @@ Graduation::Application.routes.draw do
   #   resources :products
 
   # Sample resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
-
   # Sample resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
