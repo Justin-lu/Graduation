@@ -44,8 +44,13 @@ gem "aasm", '3.0.16'  # 添加 aasm gem ，用于状态转换
 gem 'whenever', '0.8.2',:require => false # provides a clear syntax for writing and deploying cron jobs.
 
 # Deploy with Capistrano
-gem 'capistrano','2.15.4'
+gem 'capistrano','~>3.0.1'
 gem 'rvm-capistrano','1.3.1'
+gem 'capistrano-bundler'
+gem 'capistrano-rvm'
+gem 'capistrano-rails'
+gem 'capistrano-rbenv'
+
 
 # To use debugger
 gem 'debugger'
